@@ -9,7 +9,7 @@ Explain under which circumstances *Tight Class Cohesion* (TCC) and *Loose Class 
 <ins>Example:</ins> [Apache Common CLI - OptionGroup.java](https://github.com/apache/commons-cli/blob/master/src/main/java/org/apache/commons/cli/OptionGroup.java)
 
 **3** variables and **8** methods:
-![TCC and LCC graphs for the Apache Common CLI - OptionGroup.java](https://drive.google.com/file/d/1e6Rhqvj9sr8EAH3me_C-kfWZGB16L8bt/view?usp=sharing)
+![TCC and LCC graphs for the Apache Common CLI - OptionGroup.java](https://drive.google.com/uc?id=1e6Rhqvj9sr8EAH3me_C-kfWZGB16L8bt)
 
 NP: maximum number of possible connections = 8*(8-1)/2 = 28
 TCC = 5/28
