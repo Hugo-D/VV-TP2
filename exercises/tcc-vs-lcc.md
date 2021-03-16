@@ -8,7 +8,13 @@ Explain under which circumstances *Tight Class Cohesion* (TCC) and *Loose Class 
 
 <ins>Example:</ins> [Apache Common CLI - OptionGroup.java](https://github.com/apache/commons-cli/blob/master/src/main/java/org/apache/commons/cli/OptionGroup.java)
 
-**7** variables and **12** methods:
-![TCC and LCC graphs for the Apache Common CLI - OptionGroup.java](https://docs.google.com/drawings/d/1Ar0M9Ol-eqPJXO3um66PnCMUn5n-yNkjm0fn38BhXyA/edit?usp=sharing)
+**3** variables and **8** methods:
+![TCC and LCC graphs for the Apache Common CLI - OptionGroup.java](https://drive.google.com/file/d/1e6Rhqvj9sr8EAH3me_C-kfWZGB16L8bt/view?usp=sharing)
+
+NP: maximum number of possible connections = 8*(8-1)/2 = 28
+TCC = 5/28
+LCC: no indirect connections = 5/28
+
+5/28 < 0.5 we can consider the class OptionGroup to be non-cohesive.
 
 TCC is the number of direct connections over the number of possible connections while LCC is the sum of direct and indirect connections over the number of possible connections. Thus, LCC is always equal or higher than TCC.
