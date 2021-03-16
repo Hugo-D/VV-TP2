@@ -6,9 +6,9 @@ Explain under which circumstances *Tight Class Cohesion* (TCC) and *Loose Class 
 
 *Tight Class Cohesion* and *Loose Class Cohesion* metrics produce the same value for a given Java class when there isn't any indirect connections between the methods of the class.
 
-<sub>Example:</sub> [Apache Common CLI - OptionBuilder.java](https://github.com/apache/commons-cli/blob/master/src/main/java/org/apache/commons/cli/OptionBuilder.java)
+<ins>Example:</ins> [Apache Common CLI - OptionGroup.java](https://github.com/apache/commons-cli/blob/master/src/main/java/org/apache/commons/cli/OptionGroup.java)
 
 **7** variables and **12** methods:
-![TCC and LCC graphs for the Apache Common CLI - OptionBuilder.java](https://docs.google.com/drawings/d/1Ar0M9Ol-eqPJXO3um66PnCMUn5n-yNkjm0fn38BhXyA/edit?usp=sharing)
+![TCC and LCC graphs for the Apache Common CLI - OptionGroup.java](https://docs.google.com/drawings/d/1Ar0M9Ol-eqPJXO3um66PnCMUn5n-yNkjm0fn38BhXyA/edit?usp=sharing)
 
 TCC is the number of direct connections over the number of possible connections while LCC is the sum of direct and indirect connections over the number of possible connections. Thus, LCC is always equal or higher than TCC.
