@@ -23,3 +23,27 @@ Use your rule with different projects and describe you findings below. See the [
 
 ## Answer
 
+The XPath rule:
+```java
+<rule name="ifs3imbrication_vv-tp2"
+      language="java"
+      message="No code with 3 or more ifs intricated in 1 another is allowed"
+      class="net.sourceforge.pmd.lang.rule.XPathRule">
+   <description>
+Answer to VV-T2 - Extending PMD
+   </description>
+   <priority>5</priority>
+   <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath">
+         <value>
+<![CDATA[
+//IfStatement/Statement/Block/BlockStatement/Statement
+//IfStatement/Statement/Block/BlockStatement/Statement
+//IfStatement
+]]>
+         </value>
+      </property>
+   </properties>
+</rule>
+```
